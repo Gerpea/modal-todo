@@ -1,5 +1,5 @@
 import React from 'react';
-import Modal from './containers/Modal';
+import Modal from 'Containers/Modal';
 
 function App(): React.ReactElement {
   return (

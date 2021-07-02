@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal test Modal close 1`] = `null`;
+
+exports[`Modal test Modal open 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={
+      Object {
+        "WebkitOverflowScrolling": "touch",
+        "background": "#fff",
+        "border": "1px solid #ccc",
+        "borderRadius": "4px",
+        "bottom": "40px",
+        "left": "40px",
+        "outline": "none",
+        "overflow": "auto",
+        "padding": "20px",
+        "position": "absolute",
+        "right": "40px",
+        "top": "40px",
+      }
+    }
+    tabIndex="-1"
+  />
+</div>
+`;

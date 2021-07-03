@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ModalHeader test Header renders 1`] = `
-<div
+<h2
   className="Header"
 >
   Header
-</div>
+</h2>
 `;

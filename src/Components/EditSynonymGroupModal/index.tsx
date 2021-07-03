@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Modal from 'Containers/Modal';
+import Icon from 'Components/Icon';
 
 import Footer from './Footer';
 
@@ -18,7 +19,7 @@ function EditSynonymGroupModal({ isOpen, onClose }: Props): React.ReactElement {
         onClose={onClose}
         footer={<Footer />}
       >
-        Content
+        <Icon color="red">danger</Icon>
       </Modal>
     </div>
   );

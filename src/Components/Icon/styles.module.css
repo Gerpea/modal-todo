@@ -1,0 +1,11 @@
+.Icon--blue {
+  fill: var(--c-blue);
+}
+
+.Icon--red {
+  fill: var(--c-red);
+}
+
+.Icon--gray-3 {
+  fill: var(--c-gray-3);
+}

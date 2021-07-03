@@ -7,7 +7,7 @@ export interface Props {
 }
 
 function ModalHeader({ children }: Props): React.ReactElement {
-  return <div className={style.Header}>{children}</div>;
+  return <h2 className={style.Header}>{children}</h2>;
 }
 
 export default ModalHeader;

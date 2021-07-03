@@ -29,11 +29,11 @@ exports[`Modal test Modal opened 1`] = `
     style={Object {}}
     tabIndex="-1"
   >
-    <div
+    <h2
       className="Header"
     >
       Modal
-    </div>
+    </h2>
     <div
       className="Content"
     >
@@ -75,11 +75,11 @@ exports[`Modal test Modal with footer 1`] = `
     style={Object {}}
     tabIndex="-1"
   >
-    <div
+    <h2
       className="Header"
     >
       Modal
-    </div>
+    </h2>
     <div
       className="Content"
     >
@@ -121,11 +121,11 @@ exports[`Modal test Modal without footer 1`] = `
     style={Object {}}
     tabIndex="-1"
   >
-    <div
+    <h2
       className="Header"
     >
       Modal
-    </div>
+    </h2>
     <div
       className="Content"
     >

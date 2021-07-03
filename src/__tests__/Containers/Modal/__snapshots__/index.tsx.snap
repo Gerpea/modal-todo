@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal test Modal closed 1`] = `null`;
+
+exports[`Modal test Modal opened 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="Header"
+    >
+      Modal
+    </div>
+    <div
+      className="Content"
+    >
+      <div />
+    </div>
+    <div
+      className="Footer"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal test Modal with footer 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="Header"
+    >
+      Modal
+    </div>
+    <div
+      className="Content"
+    >
+      <div />
+    </div>
+    <div
+      className="Footer"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Modal test Modal without footer 1`] = `
+<div
+  className="ReactModal__Overlay"
+  onClick={[Function]}
+  onMouseDown={[Function]}
+  style={
+    Object {
+      "backgroundColor": "rgba(255, 255, 255, 0.75)",
+      "bottom": 0,
+      "left": 0,
+      "position": "fixed",
+      "right": 0,
+      "top": 0,
+    }
+  }
+>
+  <div
+    aria-modal={true}
+    className="ReactModal__Content Modal"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    role="dialog"
+    style={Object {}}
+    tabIndex="-1"
+  >
+    <div
+      className="Header"
+    >
+      Modal
+    </div>
+    <div
+      className="Content"
+    >
+      <div />
+    </div>
+  </div>
+</div>
+`;

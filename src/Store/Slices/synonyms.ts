@@ -4,11 +4,12 @@ import { Synonim, Word, Id, SynonymsState } from 'types';
 import { generateId } from 'Utils';
 
 import { RootState } from 'Store';
-import { synonymsInitialState } from 'Store/Slices/initialStates';
+
+const initialState: SynonymsState = [];
 
 const synonymsSlice = createSlice({
   name: 'synonyms',
-  initialState: synonymsInitialState,
+  initialState,
   reducers: {
     createSynonym: (state, action: PayloadAction<Word>) => {
       const synonim: Synonim = {

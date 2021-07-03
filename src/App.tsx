@@ -1,10 +1,16 @@
 import React from 'react';
-import Modal from 'Containers/Modal';
+
+import EditSynonymGroupModal from 'Components/EditSynonymGroupModal';
 
 function App(): React.ReactElement {
   return (
     <div>
-      <Modal isOpen={true} />
+      <EditSynonymGroupModal
+        isOpen={true}
+        onClose={() => {
+          console.log('close modal');
+        }}
+      />
     </div>
   );
 }

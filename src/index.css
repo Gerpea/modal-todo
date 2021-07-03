@@ -1,13 +1,34 @@
+@import './fonts.css';
+
 :root {
-  --bg-color: #fff;
+  --c-white: #fff;
+  --c-black: #000;
+
+  --c-blue: #344273;
+
+  --c-gray-1: #efefef;
+  --c-gray-2: #dedede;
+  --c-gray-3: #787878;
+  --c-gray-4: #4f4f4f;
+
+  --c-green: #5e9574;
+  --c-red: #955e5e;
+
+  --f-main: 'Circle';
+  --f-size: 16px;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: var(--f-main);
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: var(--c-white);
+  color: var(--c-black);
+
+  font-size: var(--f-size);
 }

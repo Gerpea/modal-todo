@@ -32,9 +32,9 @@ exports[`Modal test Modal opened 1`] = `
     <div
       className="Header"
     >
-      <h2>
+      <h3>
         Modal
-      </h2>
+      </h3>
       <button
         className="IconButton Button Button--primary"
         onClick={[Function]}
@@ -102,9 +102,9 @@ exports[`Modal test Modal with footer 1`] = `
     <div
       className="Header"
     >
-      <h2>
+      <h3>
         Modal
-      </h2>
+      </h3>
       <button
         className="IconButton Button Button--primary"
         onClick={[Function]}
@@ -172,9 +172,9 @@ exports[`Modal test Modal without footer 1`] = `
     <div
       className="Header"
     >
-      <h2>
+      <h3>
         Modal
-      </h2>
+      </h3>
       <button
         className="IconButton Button Button--primary"
         onClick={[Function]}

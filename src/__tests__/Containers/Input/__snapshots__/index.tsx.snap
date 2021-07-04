@@ -4,6 +4,5 @@ exports[`Input test Input renders 1`] = `
 <input
   className="Input"
   onChange={[Function]}
-  placeholder="Введите что нибудь"
 />
 `;

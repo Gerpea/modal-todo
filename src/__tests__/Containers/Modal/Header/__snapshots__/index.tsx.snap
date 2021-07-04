@@ -4,9 +4,9 @@ exports[`ModalHeader test Header renders 1`] = `
 <div
   className="Header"
 >
-  <h2>
+  <h3>
     Header
-  </h2>
+  </h3>
   <button
     className="IconButton Button Button--primary"
   >

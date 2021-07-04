@@ -1,17 +1,23 @@
 import React from 'react';
 import clsx from 'clsx';
 
-import style from './styles.module.css';
+import style from './styles.module.scss';
 
 export interface Props {
-  type: 'success' | 'danger';
+  type?: 'primary' | 'success' | 'danger';
+  className?: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children: React.ReactNode;
 }
 
-function Button({ type, children }: Props): React.ReactElement {
-  const styles = clsx(style.Button, style[`Button--${type}`]);
+function Button({ type = 'primary', className, onClick, children }: Props): React.ReactElement {
+  const styles = clsx(className, style.Button, type && style[`Button--${type}`]);
 
-  return <button className={styles}>{children}</button>;
+  return (
+    <button className={styles} onClick={onClick}>
+      {children}
+    </button>
+  );
 }
 
 export default Button;

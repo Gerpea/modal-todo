@@ -16,6 +16,7 @@
     "clsx": "^1.1.1",
     "logger": "^0.0.1",
     "nanoid": "^3.1.23",
+    "node-sass": "4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-modal": "^3.14.3",

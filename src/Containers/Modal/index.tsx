@@ -5,7 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Content from './Content';
 
-import style from './styles.module.css';
+import style from './styles.module.scss';
 export interface Props {
   isOpen: boolean;
   title: string;
@@ -17,7 +17,7 @@ export interface Props {
 function Modal({ isOpen, title, onClose, footer, children }: Props): React.ReactElement {
   return (
     <ReactModal isOpen={isOpen} className={style.Modal} onRequestClose={onClose}>
-      <Header>{title}</Header>
+      <Header onClose={onClose}>{title}</Header>
       <Content>{children}</Content>
       {footer && <Footer>{footer}</Footer>}
     </ReactModal>

@@ -1,0 +1,26 @@
+@import '../../variables';
+
+.Input {
+  position: relative;
+
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  width: 100%;
+  padding: 12px 0;
+
+  border-bottom: 1px solid transparentize($c-blue, 0.5);
+  color: $c-black;
+
+  font-size: 1rem;
+  line-height: 1.125;
+}
+
+.Input::placeholder {
+  color: transparentize($c-blue, 0.5);
+}
+
+.Input:focus {
+  border-color: $c-blue;
+}

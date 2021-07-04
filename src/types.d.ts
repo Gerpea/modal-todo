@@ -1,9 +1,9 @@
 export type Word = string;
 export type Id = string;
 
-export interface Synonim {
+export interface Synonym {
   id: Id;
   word: Word;
 }
 
-export type SynonymsState = Synonim[];
+export type SynonymsState = Synonym[];

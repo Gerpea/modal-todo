@@ -1,0 +1,40 @@
+@import '../../variables';
+
+.SynonymCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 11px;
+
+  width: 100%;
+  padding: 11px;
+  border-radius: 3px;
+
+  background-color: $c-white;
+
+  color: $c-blue;
+  font-weight: bold;
+  line-height: 1.125;
+}
+
+.SynonymCardText {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.SynonymCardControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 11px;
+
+  & > * {
+    filter: opacity(50%);
+
+    &:hover {
+      filter: opacity(100%);
+    }
+  }
+}

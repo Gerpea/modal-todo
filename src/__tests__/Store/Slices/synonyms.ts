@@ -9,9 +9,9 @@ describe('Synonyms reducer tests', () => {
     const expected = 'Synonym';
 
     state = synonymsReducer(state, createSynonym(expected));
-    const addedSynonim = state.find((s) => s.word === expected);
+    const addedSynonym = state.find((s) => s.word === expected);
 
-    expect(addedSynonim).not.toBeNull();
+    expect(addedSynonym).not.toBeNull();
   });
 
   test('Updates a synonym', () => {

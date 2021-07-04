@@ -11,8 +11,12 @@ export interface Props {
 function Footer(): React.ReactElement {
   return (
     <div className={style.Footer}>
-      <Button type="success">сохранить изменения</Button>
-      <Button type="danger">очистить синонимы</Button>
+      <Button type="success" onClick={() => void {}}>
+        сохранить изменения
+      </Button>
+      <Button type="danger" onClick={() => void {}}>
+        очистить синонимы
+      </Button>
     </div>
   );
 }

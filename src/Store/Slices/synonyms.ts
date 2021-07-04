@@ -1,9 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import { Synonim, Word, Id, SynonymsState } from 'types';
+import { Synonym, Word, Id, SynonymsState } from 'types';
 import { generateId } from 'Utils';
-
-import { RootState } from 'Store';
 
 const initialState: SynonymsState = [];
 
@@ -12,13 +10,13 @@ const synonymsSlice = createSlice({
   initialState,
   reducers: {
     createSynonym: (state, action: PayloadAction<Word>) => {
-      const synonim: Synonim = {
+      const synonym: Synonym = {
         id: generateId(),
         word: action.payload,
       };
-      state.push(synonim);
+      state.push(synonym);
     },
-    updateSynonym: (state, action: PayloadAction<Synonim>) => {
+    updateSynonym: (state, action: PayloadAction<Synonym>) => {
       const idx = state.findIndex((synonym) => synonym.id === action.payload.id);
       if (idx !== -1) {
         state[idx].word = action.payload.word;
@@ -33,7 +31,5 @@ const synonymsSlice = createSlice({
 const { actions, reducer } = synonymsSlice;
 
 export const { createSynonym, updateSynonym, removeSynonym } = actions;
-
-export const selectSynonyms = (state: RootState): SynonymsState => state.synonyms as SynonymsState;
 
 export default reducer;

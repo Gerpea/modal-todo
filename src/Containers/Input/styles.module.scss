@@ -8,13 +8,14 @@
   background-color: transparent;
 
   width: 100%;
-  padding: 12px 0;
+  padding-top: 13px;
+  padding-bottom: 11px;
 
   border-bottom: 1px solid transparentize($c-blue, 0.5);
   color: $c-black;
 
   font-size: 1rem;
-  line-height: 1.125;
+  line-height: 1.15;
 }
 
 .Input::placeholder {

@@ -1,0 +1,67 @@
+@import '../../variables';
+
+.Modal {
+  width: 560px;
+  height: 560px;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: row;
+
+  column-gap: 20px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.SynonymsList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.SynonymInput {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  color: $c-gray-3;
+  font-size: 0.875rem;
+  line-height: 1;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  p {
+    font-size: 0.8rem;
+    line-height: 0.9;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+}
+
+.Controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  column-gap: 13px;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+
+  color: $c-gray-4;
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.7;
+}

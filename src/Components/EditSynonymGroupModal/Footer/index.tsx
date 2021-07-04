@@ -2,11 +2,7 @@ import React from 'react';
 
 import Button from 'Containers/Button';
 
-import style from '../styles.module.css';
-
-export interface Props {
-  children: React.ReactNode;
-}
+import style from '../styles.module.scss';
 
 function Footer(): React.ReactElement {
   return (

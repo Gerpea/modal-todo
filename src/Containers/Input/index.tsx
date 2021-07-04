@@ -6,12 +6,14 @@ import style from './styles.module.scss';
 export interface Props {
   className?: string;
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  placeholder?: string;
 }
 
-function Input({ className, onChange }: Props): React.ReactElement {
+function Input({ className, value, placeholder, onChange }: Props): React.ReactElement {
   const styles = clsx(className, style.Input);
 
-  return <input className={styles} onChange={onChange} placeholder="Введите что нибудь" />;
+  return <input value={value} className={styles} onChange={onChange} placeholder={placeholder} />;
 }
 
 export default Input;

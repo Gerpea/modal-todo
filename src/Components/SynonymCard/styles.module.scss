@@ -9,6 +9,7 @@
 
   width: 100%;
   padding: 11px;
+  padding-right: 14px;
   border-radius: 3px;
 
   background-color: $c-white;
@@ -22,6 +23,7 @@
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  letter-spacing: -0.9px;
 }
 
 .SynonymCardControls {

@@ -13,7 +13,7 @@ export interface Props {
 function ModalHeader({ children, onClose }: Props): React.ReactElement {
   return (
     <div className={style.Header}>
-      <h2>{children}</h2>
+      <h3>{children}</h3>
       <IconButton color="blue" onClick={onClose}>
         {Icons.close}
       </IconButton>

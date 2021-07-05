@@ -9,7 +9,8 @@
 
   width: 100%;
   padding: 11px;
-  padding-right: 14px;
+  padding-top: 12px;
+  padding-right: 13px;
   border-radius: 3px;
 
   background-color: $c-white;
@@ -23,14 +24,13 @@
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
-  letter-spacing: -0.9px;
 }
 
 .SynonymCardControls {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  column-gap: 11px;
+  column-gap: 13px;
 
   & > * {
     filter: opacity(50%);

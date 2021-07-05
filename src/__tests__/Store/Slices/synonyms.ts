@@ -1,6 +1,6 @@
 import { SynonymsState } from 'types';
 
-import synonymsReducer from 'Store/Slices/synonyms';
+import synonymsReducer, { resetSynonyms } from 'Store/Slices/synonyms';
 import { createSynonym, updateSynonym, removeSynonym } from 'Store/Slices/synonyms';
 
 describe('Synonyms reducer tests', () => {
@@ -43,5 +43,19 @@ describe('Synonyms reducer tests', () => {
     state = synonymsReducer(state, removeSynonym(id));
 
     expect(state.length).toBe(initialSynonymsCount - 1);
+  });
+
+  test('Reset synonyms', () => {
+    const id = '1';
+    let state: SynonymsState = [
+      {
+        id,
+        word: 'Synonym',
+      },
+    ];
+
+    state = synonymsReducer(state, resetSynonyms());
+
+    expect(state.length).toBe(0);
   });
 });

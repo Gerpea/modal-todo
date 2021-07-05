@@ -9,13 +9,13 @@
 
   width: 100%;
 
-  padding-top: 13px;
+  padding: 10px 0;
   padding-bottom: 11px;
   border-bottom: 1px solid transparentize($c-blue, 0.5);
 
   color: $c-black;
-  font-size: 0.9rem;
-  line-height: 1.15;
+  font-size: 1rem;
+  line-height: 1.125;
 }
 
 .Input::placeholder {

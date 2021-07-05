@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import clsx from 'clsx';
 
 import { Word } from 'types';
 
@@ -9,10 +10,12 @@ import Field from 'Components/Field';
 import style from '../styles.module.scss';
 
 export interface Props {
+  className?: string;
   onAddSynonym: (synonym: Word) => void;
 }
 
-function AddSynonym({ onAddSynonym }: Props): React.ReactElement {
+function AddSynonym({ onAddSynonym, className }: Props): React.ReactElement {
+  const styles = clsx(className, style.Content);
   const [value, setValue] = useState<Word>('');
 
   const handleChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +23,7 @@ function AddSynonym({ onAddSynonym }: Props): React.ReactElement {
   };
 
   return (
-    <div className={style.Content}>
+    <div className={styles}>
       <Field label="Добавление синонима:">
         <TextInput
           className={style.Input}

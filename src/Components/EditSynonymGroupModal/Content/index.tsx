@@ -9,7 +9,7 @@ import AddSynonym from './SynonymInputs/AddSynonym';
 import Info from './Info';
 import SynonymsList from './SynonymsList';
 
-import style from '../styles.module.scss';
+import style from './styles.module.scss';
 
 function Content(): React.ReactElement {
   const synonyms = useSynonymsSelector();
@@ -43,7 +43,7 @@ function Content(): React.ReactElement {
   return (
     <div className={style.Content}>
       <Info />
-      {!editedId && <AddSynonym onAddSynonym={handleAddSynonym} />}
+      {!editedId && <AddSynonym onAddSynonym={handleAddSynonym} className={style.AddPadding} />}
       <SynonymsList
         synonyms={synonyms}
         editedId={editedId}

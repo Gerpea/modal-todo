@@ -29,6 +29,7 @@ function SynonymsList({
       {synonyms.map((synonym) =>
         editedId === synonym.id ? (
           <EditSynonym
+            className={style.EditPadding}
             initialValue={synonym.word}
             onEdit={(value) => onUpdate({ id: editedId, word: value })}
             onCancelEdit={onCancelEdit}

@@ -17,26 +17,33 @@ export interface Props {
 function AddSynonym({ onAddSynonym, className }: Props): React.ReactElement {
   const styles = clsx(className, style.Content);
   const [value, setValue] = useState<Word>('');
+  const [error, setError] = useState<string>();
 
   const handleChangeValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setError(undefined);
     setValue(e.target.value);
   };
 
   return (
     <div className={styles}>
-      <Field label="Добавление синонима:">
+      <Field label="Добавление синонима:" error={error}>
         <TextInput
           className={style.Input}
           placeholder="Введите название"
           value={value}
           onChange={handleChangeValue}
+          error={error}
         />
       </Field>
       <div className={style.Controls}>
         <Button
           onClick={() => {
-            onAddSynonym(value);
-            setValue('');
+            if (value && value.length > 0) {
+              onAddSynonym(value);
+              setValue('');
+            } else {
+              setError('Заполните поле');
+            }
           }}
         >
           Добавить

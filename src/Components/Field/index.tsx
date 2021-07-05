@@ -1,10 +1,9 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, ReactElement } from 'react';
 import clsx from 'clsx';
 
 import Icon, { Icons } from 'Components/Icon';
 
 import style from './styles.module.scss';
-import { ReactElement } from 'react';
 
 export interface Props {
   className?: string;

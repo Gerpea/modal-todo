@@ -1,7 +1,11 @@
-import { SynonymsState } from 'types';
+import { SynonymsState } from 'Types';
 
-import synonymsReducer, { resetSynonyms } from 'Store/Slices/synonyms';
-import { createSynonym, updateSynonym, removeSynonym } from 'Store/Slices/synonyms';
+import synonymsReducer, {
+  createSynonym,
+  updateSynonym,
+  removeSynonym,
+  resetSynonyms,
+} from 'Store/Slices/synonyms';
 
 describe('Synonyms reducer tests', () => {
   test('Creates a new synonym', () => {

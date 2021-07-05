@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 
-import { Word } from 'types';
+import { Word } from 'Types';
 
 import TextInput from 'Containers/TextInput';
 import Button from 'Containers/Button';

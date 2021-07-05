@@ -1,15 +1,15 @@
 import React from 'react';
 
-import AppStorage from 'Storage';
 import { SYNONYMS_KEY } from 'Constants';
+import AppStorage from 'Storage';
 
 import { useAppDispatch } from 'Hooks/useAppDispatch';
 import { resetSynonyms } from 'Store/Slices/synonyms';
+import useSynonymsSelector from 'Store/Selectors/synonyms';
 
 import Button from 'Containers/Button';
 
 import style from './styles.module.scss';
-import useSynonymsSelector from 'Store/Selectors/synonyms';
 
 function Footer(): React.ReactElement {
   const synonyms = useSynonymsSelector();

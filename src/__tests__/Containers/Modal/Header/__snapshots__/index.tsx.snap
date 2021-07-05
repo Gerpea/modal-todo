@@ -9,6 +9,7 @@ exports[`ModalHeader test Header renders 1`] = `
   </h3>
   <button
     className="IconButton Button Button--primary"
+    onClick={[Function]}
   >
     <svg
       aria-labelledby="title"

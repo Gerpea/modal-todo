@@ -5,7 +5,7 @@ import Header from 'Containers/Modal/Header';
 
 describe('ModalHeader test', () => {
   it('Header renders', () => {
-    const tree = renderer.create(<Header>Header</Header>).toJSON();
+    const tree = renderer.create(<Header onClose={() => void {}}>Header</Header>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 });

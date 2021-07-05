@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Id, Synonym, SynonymsState } from 'types';
+import { Id, Synonym, SynonymsState } from 'Types';
 
 import SynonymCard from '../SynonymCard';
 import EditSynonym from '../SynonymInputs/EditSynonym';
@@ -25,7 +25,7 @@ function SynonymsList({
   editedId,
 }: Props): React.ReactElement {
   return (
-    <div className={style.List}>
+    <ul className={style.List}>
       {synonyms.map((synonym) =>
         editedId === synonym.id ? (
           <EditSynonym
@@ -41,7 +41,7 @@ function SynonymsList({
           </SynonymCard>
         ),
       )}
-    </div>
+    </ul>
   );
 }
 

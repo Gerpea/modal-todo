@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import Button, { Props as ButtonProps } from 'Containers/Button';
 import Icon, { Props as IconProps } from 'Components/Icon';
 
-import style from './styles.module.css';
+import style from './styles.module.scss';
 
 function IconButton({
   color,

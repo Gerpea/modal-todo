@@ -1,18 +1,19 @@
 @import '../../../variables';
 
 .Header {
-  padding-bottom: 10px;
-  border-bottom: 2px solid $c-gray-2;
-  font-weight: bold;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
   column-gap: 12px;
 
-  padding-right: 1px;
   width: 100%;
+
+  padding-bottom: 10px;
+  padding-right: 1px;
+  border-bottom: 2px solid $c-gray-2;
+
+  font-weight: bold;
 
   h3 {
     font-size: 1.114rem;

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
-import { Id, Synonym, Word } from 'types';
+import { Id, Synonym, Word } from 'Types';
+
+import { useAppDispatch } from 'Hooks/useAppDispatch';
+
 import useSynonymsSelector from 'Store/Selectors/synonyms';
 import { createSynonym, removeSynonym, updateSynonym } from 'Store/Slices/synonyms';
-import { useAppDispatch } from 'Hooks/useAppDispatch';
 
 import AddSynonym from './SynonymInputs/AddSynonym';
 import Info from './Info';

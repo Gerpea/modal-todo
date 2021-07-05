@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Synonym } from 'types';
+import { Synonym } from 'Types';
 
 import IconButton from 'Components/IconButton';
 import { Icons } from 'Components/Icon';

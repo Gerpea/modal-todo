@@ -1,0 +1,58 @@
+@import '../../variables';
+
+.Button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 7px 9px;
+
+  outline: none;
+
+  font-weight: bold;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-transform: lowercase;
+
+  cursor: pointer;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.Button--primary {
+  color: $c-white;
+  background-color: $c-blue;
+
+  &:focus,
+  &:hover {
+    color: $c-blue;
+    border-color: $c-blue;
+  }
+}
+
+.Button--success {
+  color: $c-white;
+  background-color: $c-green;
+
+  &:focus,
+  &:hover {
+    color: $c-green;
+    border-color: $c-green;
+  }
+}
+
+.Button--danger {
+  color: $c-white;
+  background-color: $c-red;
+
+  &:focus,
+  &:hover {
+    color: $c-red;
+    border-color: $c-red;
+  }
+}

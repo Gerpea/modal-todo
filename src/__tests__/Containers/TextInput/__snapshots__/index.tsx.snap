@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input test Input renders 1`] = `
+<input
+  className="Input"
+  onChange={[Function]}
+/>
+`;
+
+exports[`Input test Input with error 1`] = `
+<input
+  className="Input Error"
+  onChange={[Function]}
+/>
+`;

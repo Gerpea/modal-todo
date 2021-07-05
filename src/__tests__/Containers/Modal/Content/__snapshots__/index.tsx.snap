@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalContent test Content renders 1`] = `
+<div
+  className="Content"
+>
+  content
+</div>
+`;

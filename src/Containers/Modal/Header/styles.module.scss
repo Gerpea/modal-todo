@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 12px;
+
+  width: 100%;
+
+  padding-bottom: 10px;
+  padding-right: 1px;
+  border-bottom: 2px solid $c-gray-2;
+
+  font-weight: bold;
+
+  h3 {
+    font-size: 1.114rem;
+    line-height: 1.45;
+    font-weight: bold;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

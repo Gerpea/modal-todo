@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test Button danger close 1`] = `
+<button
+  className="Button Button--danger"
+  onClick={[Function]}
+>
+  danger
+</button>
+`;
+
+exports[`Button test Button success 1`] = `
+<button
+  className="Button Button--success"
+  onClick={[Function]}
+>
+  success
+</button>
+`;

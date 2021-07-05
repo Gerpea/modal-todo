@@ -1,0 +1,17 @@
+@import './fonts';
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: $f-main;
+}
+
+body {
+  background-color: $c-white;
+  color: $c-black;
+
+  font-size: $f-size;
+}

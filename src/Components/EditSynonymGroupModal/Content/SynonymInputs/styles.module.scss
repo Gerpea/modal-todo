@@ -1,0 +1,19 @@
+@import '../../../../variables';
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+
+  color: $c-gray-3;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.Controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  column-gap: 13px;
+}

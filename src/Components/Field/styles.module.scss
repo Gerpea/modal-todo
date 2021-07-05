@@ -1,0 +1,24 @@
+@import '../../variables';
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Label {
+  color: $c-gray-3;
+
+  text-transform: lowercase;
+  font-size: 0.8rem;
+  line-height: 0.9;
+}
+
+.Error {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+
+  color: $c-red;
+}

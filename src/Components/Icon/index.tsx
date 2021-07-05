@@ -33,7 +33,6 @@ export interface Props {
 }
 
 function Icon({ color, children: name }: Props): React.ReactElement {
-  console.log(name);
   const IconComponent = icons[name];
   const styles = clsx(style.Icon, style[`Icon--${color}`]);
 

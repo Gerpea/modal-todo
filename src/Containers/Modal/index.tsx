@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactModal from 'react-modal';
+import clsx from 'clsx';
 
 import Header from './Header';
 import Footer from './Footer';
 import Content from './Content';
 
 import style from './styles.module.scss';
-import clsx from 'clsx';
 export interface Props {
   isOpen: boolean;
   title: string;

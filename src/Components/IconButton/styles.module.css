@@ -13,5 +13,6 @@
 .IconButton:focus {
   background-color: transparent;
   color: transparent;
+
   border: none;
 }

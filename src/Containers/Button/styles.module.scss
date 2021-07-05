@@ -18,7 +18,8 @@
 
   cursor: pointer;
 
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: transparent;
   }
 }
@@ -27,7 +28,8 @@
   color: $c-white;
   background-color: $c-blue;
 
-  &:focus {
+  &:focus,
+  &:hover {
     color: $c-blue;
     border-color: $c-blue;
   }
@@ -37,7 +39,8 @@
   color: $c-white;
   background-color: $c-green;
 
-  &:focus {
+  &:focus,
+  &:hover {
     color: $c-green;
     border-color: $c-green;
   }
@@ -47,7 +50,8 @@
   color: $c-white;
   background-color: $c-red;
 
-  &:focus {
+  &:focus,
+  &:hover {
     color: $c-red;
     border-color: $c-red;
   }

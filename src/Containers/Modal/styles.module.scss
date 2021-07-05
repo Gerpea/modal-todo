@@ -1,6 +1,11 @@
 @import '../../variables';
 
 .Modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -14,43 +19,6 @@
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
   outline: none;
-
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.Header {
-  padding-bottom: 10px;
-  border-bottom: 2px solid $c-gray-2;
-  font-weight: bold;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  column-gap: 12px;
-  width: 100%;
-
-  h3 {
-    font-size: 1.114rem;
-    line-height: 1.5;
-    font-weight: bold;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-
-.Content {
-  flex-basis: 100%;
-}
-
-.Footer {
-  padding-top: 19px;
-  border-top: 2px solid $c-gray-2;
-  width: 100%;
 }
 
 @media (max-width: 600px) {

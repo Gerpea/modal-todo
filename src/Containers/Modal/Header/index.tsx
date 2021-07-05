@@ -3,7 +3,7 @@ import React from 'react';
 import IconButton from 'Components/IconButton';
 import { Icons } from 'Components/Icon';
 
-import style from '../styles.module.scss';
+import style from './styles.module.scss';
 
 export interface Props {
   children: React.ReactNode;

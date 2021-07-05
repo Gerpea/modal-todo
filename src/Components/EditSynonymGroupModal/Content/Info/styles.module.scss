@@ -1,0 +1,14 @@
+@import '../../../../variables';
+
+.Info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+
+  color: $c-gray-4;
+
+  font-size: 0.9rem;
+  font-weight: bold;
+  line-height: 1.7;
+}

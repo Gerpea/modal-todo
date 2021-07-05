@@ -6,3 +6,10 @@ exports[`Input test Input renders 1`] = `
   onChange={[Function]}
 />
 `;
+
+exports[`Input test Input with error 1`] = `
+<input
+  className="Input Error"
+  onChange={[Function]}
+/>
+`;
